@@ -1,10 +1,14 @@
+import { processFontFamily } from 'expo-font';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export default function Home() {
   return (
-    <View style={styles.container}>
-      <Text>HOME</Text>
+    <View style={styles.Container}>
+      
     </View>
   );
 }
+ const styles = StyleSheet.Container{
+    
+ }
