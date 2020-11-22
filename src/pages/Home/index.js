@@ -4,10 +4,12 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity} from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import Shoes from '../../component/Shoes';
-
+import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {
-  return (
+    const navigation = useNavigation();
+  
+    return (
     <View style={styles.container}>
         <View style={styles.header}>
             <Image
@@ -35,7 +37,7 @@ export default function Home() {
                     cost="65.00"
                     img={require('../../assets/1.png')}
                     name="Nike Showx 20"
-                    onClick={() => alert('teste')}
+                    onClick={ () => navigation.navigate('Detail')} 
                 />
                 <Shoes
                     cost="565.00"
@@ -50,11 +52,13 @@ export default function Home() {
                     cost="310.00"
                     img={require('../../assets/3.png')}
                     name="Nike Line"
+                    onClick={() => alert('There is no more information')}
                 />
                 <Shoes
                     cost="99.99"
                     img={require('../../assets/4.png')}
                     name="Nike Army"
+                    onClick={() => alert('There is no more information')}
                 />
             </View>
 
@@ -63,11 +67,13 @@ export default function Home() {
                     cost="165.00"
                     img={require('../../assets/5.png')}
                     name="Nike Shock Impact"
+                    onClick={() => alert('There is no more information')}
                 />
                 <Shoes
                     cost="235.00"
                     img={require('../../assets/6.png')}
                     name="Nike Air 10"
+                    onClick={() => alert('There is no more information')}
                 />
             </View>
             
