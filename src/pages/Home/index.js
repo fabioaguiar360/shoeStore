@@ -30,7 +30,7 @@ export default function Home() {
             </TouchableOpacity>
         </View>
         <View style={styles.line}></View>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
             <Text style={[styles.text, {marginLeft: '3%'}]}>LANÇAMENTOS</Text>
             <View style={{ flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Shoes
